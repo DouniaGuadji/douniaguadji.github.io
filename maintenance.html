@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maintenance prédictive (démo synthétique)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; background:#f7f7f8; color:#111; }
+    header { padding: 32px 24px; text-align:center; background:#fff; border-bottom:1px solid rgba(0,0,0,.06); }
+    .container { max-width: 900px; margin: 0 auto; padding: 24px; }
+    h1,h2 { margin: 0 0 12px; }
+    pre, code { background: #fff; border:1px solid #eee; padding: 8px 10px; border-radius:10px; overflow:auto; }
+    .block { background:#fff; border:1px solid rgba(0,0,0,.08); padding:16px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.06); margin:16px 0; }
+    nav a { margin: 0 10px; color:#111; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maintenance prédictive turbines (démo synthétique)</h1>
+    <nav>
+      <a href="../index.html">Accueil</a>
+      <a href="./maintenance.html">Projet</a>
+      <a href="../designs.html">Design</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="block">
+      <h2>Contexte</h2>
+      <p>Secteur : énergie. Objectif : détecter précocement des pannes de turbines à gaz pour réduire les arrêts non planifiés.</p>
+    </section>
+    <section class="block">
+      <h2>Problème</h2>
+      <p>Classifier l'état (panne vs normal) avec un rappel élevé sur la classe minoritaire.</p>
+    </section>
+    <section class="block">
+      <h2>Données (synthétiques)</h2>
+      <p>Données générées à partir d'hypothèses inspirées d'un cas réel. Aucune donnée interne n'est exposée.</p>
+    </section>
+    <section class="block">
+      <h2>Approche</h2>
+      <ul>
+        <li>Modèles testés : k-NN, Random Forest, MLP (choix justifiés).</li>
+        <li>Prétraitement : normalisation, gestion déséquilibre (stratification).</li>
+        <li>Expérimentation : traçage des runs, validation croisée.</li>
+      </ul>
+    </section>
+    <section class="block">
+      <h2>Résultats</h2>
+      <ul>
+        <li>F1 globale : 0.80–0.84</li>
+        <li>Rappel (classe panne) : 0.72–0.80</li>
+      </ul>
+    </section>
+    <section class="block">
+      <h2>Industrialisation</h2>
+      <ul>
+        <li>Endpoint FastAPI <code>/predict</code>, Docker.</li>
+        <li>CI (tests & lint) + déploiement (environnement de démo).</li>
+        <li>Monitoring basique (latence, erreurs).</li>
+      </ul>
+    </section>
+    <section class="block">
+      <h2>Ressources</h2>
+      <ul>
+        <li>Démo (si disponible) : lien Hugging Face Spaces.</li>
+        <li>Repo public (briques génériques) : à venir.</li>
+        <li>Model Card : à venir.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio – Ingénieur·e IA</title>
+  <meta name="description" content="Portfolio d'ingénieur·e IA / informaticien·ne : projets ML, MLOps, UI/UX."/>
+  <style>
+    :root { --radius: 16px; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; background:#f7f7f8; color:#111; }
+    header { padding: 56px 24px; text-align:center; background:linear-gradient(180deg,#fff, #f7f7f8); border-bottom:1px solid rgba(0,0,0,.06); }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 44px); }
+    .muted { color:#666; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); }
+    .card { background:#fff; padding:18px; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(0,0,0,.06); border: 1px solid rgba(0,0,0,.08); }
+    .card h2 { margin: 4px 0 8px; font-size: 20px; }
+    .tag { font-size: 12px; border:1px solid #e1e1e4; border-radius:999px; padding:2px 8px; display:inline-block; margin-right:6px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #111; text-decoration:none; color:#111; }
+    .btn:hover { background:#111; color:#fff; }
+    footer { padding: 40px 24px; text-align:center; color:#666; }
+    nav a { margin: 0 10px; color:#111; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    ul { padding-left: 18px; }
+    .projects li { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[Ton Nom] — Ingénieur·e IA</h1>
+    <p class="muted">ML/Deep Learning • MLOps (FastAPI, Docker, CI/CD) • React • SQL</p>
+    <nav>
+      <a href="./index.html">Accueil</a>
+      <a href="./projects/maintenance.html">Projets</a>
+      <a href="./designs.html">Design UI/UX</a>
+      <a href="./documents/CV.pdf">CV</a>
+    </nav>
+    <p style="margin-top:10px">
+      <a href="mailto:toi@mail.com">toi@mail.com</a> ·
+      <a href="https://github.com/ton-user">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/ton-link/">LinkedIn</a>
+    </p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>À propos</h2>
+      <p>Ingénieur·e IA spécialisé·e en séries temporelles et MLOps. Je transforme des données réelles
+      en produits concrets avec un impact mesurable. Outils : Python, scikit-learn, PyTorch, FastAPI, Docker, SQL, React.</p>
+    </section>
+
+    <section class="grid" aria-label="Projets">
+      <div class="card">
+        <h2>Maintenance prédictive turbines (démo synthétique)</h2>
+        <p><span class="tag">ML</span> <span class="tag">Timeseries</span> <span class="tag">Streamlit</span></p>
+        <p>Détection de pannes sur données synthétiques inspirées d'un cas réel. F1 : 0.80–0.84 · Rappel classe rare : 0.72–0.80.</p>
+        <p><a class="btn" href="./projects/maintenance.html">Étude de cas</a></p>
+      </div>
+      <div class="card">
+        <h2>Airline Catering Weight Optimizer</h2>
+        <p><span class="tag">Web</span> <span class="tag">React</span> <span class="tag">API</span></p>
+        <p>Mini-app de calcul de masse de base avec règles métier simplifiées et données factices.</p>
+        <p><a class="btn" href="./projects/catering.html">Étude de cas</a></p>
+      </div>
+      <div class="card">
+        <h2>Design UI/UX</h2>
+        <p><span class="tag">Figma</span> <span class="tag">Prototype</span></p>
+        <p>Maquettes haute-fidélité et parcours utilisateurs.</p>
+        <p><a class="btn" href="./designs.html">Voir la page Design</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© [Ton Nom] – Démo sur données synthétiques / cas réels anonymisés</footer>
+</body>
+</html>
